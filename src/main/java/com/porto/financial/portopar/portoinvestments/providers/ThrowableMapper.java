@@ -1,15 +1,14 @@
 package com.porto.financial.portopar.portoinvestments.providers;
 
-import static com.porto.financial.portopar.portoinvestments.types.ErrorMessage.ERROR_OPERATION;
+import com.porto.financial.portopar.portoinvestments.exception.PortoSeguroException;
+import com.porto.financial.portopar.portoinvestments.response.ExceptionResponse;
+import org.apache.log4j.Logger;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
-import org.apache.log4j.Logger;
-
-import com.porto.financial.portopar.portoinvestments.exception.PortoSeguroException;
-import com.porto.financial.portopar.portoinvestments.response.ExceptionResponse;
+import static com.porto.financial.portopar.portoinvestments.types.ErrorMessage.ERROR_OPERATION;
 
 /**
  * Defines an exception handler to response exception of operations. 

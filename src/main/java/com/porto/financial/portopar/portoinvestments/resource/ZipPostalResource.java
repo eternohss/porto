@@ -1,12 +1,12 @@
 package com.porto.financial.portopar.portoinvestments.resource;
 
+import com.porto.financial.portopar.portoinvestments.service.ZipPostalService;
+
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
-
-import com.porto.financial.portopar.portoinvestments.service.ZipPostalService;
 
 /**
  * Represents an end-point to search Brazilian ZipPostal. 

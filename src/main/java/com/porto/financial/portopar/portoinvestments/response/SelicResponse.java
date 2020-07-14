@@ -1,10 +1,10 @@
 package com.porto.financial.portopar.portoinvestments.response;
 
-import java.math.BigDecimal;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.math.BigDecimal;
 
 /**
  * Canonical model to selic rate response.

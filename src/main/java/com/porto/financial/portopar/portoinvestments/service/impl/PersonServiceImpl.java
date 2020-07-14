@@ -1,12 +1,12 @@
 package com.porto.financial.portopar.portoinvestments.service.impl;
 
-import static com.porto.financial.portopar.portoinvestments.types.InfoMessage.WELCOME;
-
-import javax.enterprise.context.ApplicationScoped;
-
 import com.porto.financial.portopar.portoinvestments.request.PersonRequest;
 import com.porto.financial.portopar.portoinvestments.response.GreetingResponse;
 import com.porto.financial.portopar.portoinvestments.service.PersonService;
+
+import javax.enterprise.context.ApplicationScoped;
+
+import static com.porto.financial.portopar.portoinvestments.types.InfoMessage.WELCOME;
 
 
 /**

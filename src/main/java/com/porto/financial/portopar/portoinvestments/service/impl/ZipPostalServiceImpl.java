@@ -1,18 +1,17 @@
 package com.porto.financial.portopar.portoinvestments.service.impl;
 
-import static com.porto.financial.portopar.portoinvestments.types.ErrorMessage.ERROR_OPERATION;
+import com.porto.financial.portopar.portoinvestments.exception.PortoSeguroException;
+import com.porto.financial.portopar.portoinvestments.response.AddressResponse;
+import com.porto.financial.portopar.portoinvestments.rest.client.RestClient;
+import com.porto.financial.portopar.portoinvestments.service.ZipPostalService;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.porto.financial.portopar.portoinvestments.exception.PortoSeguroException;
-import com.porto.financial.portopar.portoinvestments.response.AddressResponse;
-import com.porto.financial.portopar.portoinvestments.rest.client.RestClient;
-import com.porto.financial.portopar.portoinvestments.service.ZipPostalService;
-
 import static com.porto.financial.portopar.portoinvestments.types.Endpoints.VIA_CEP;
+import static com.porto.financial.portopar.portoinvestments.types.ErrorMessage.ERROR_OPERATION;
 
 /**
  * Default implementation of {@link ZipPostalService}.
