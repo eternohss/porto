@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.porto.financial.portopar.portoinvestments</groupId>
+	<artifactId>porto-investments</artifactId>
+	<packaging>war</packaging>
+	<version>1.0-SNAPSHOT</version>
+
+	<properties>
+		<liberty.var.default.http.port>8080</liberty.var.default.http.port>
+		<liberty.var.default.https.port>8082</liberty.var.default.https.port>
+		<liberty.version>3.1</liberty.version>
+
+		<junit.version>3.8.1</junit.version>
+		<log4j.version>1.2.17</log4j.version>
+		<jakartaee.version>8.0.0</jakartaee.version>
+		<microprofile.version>3.2</microprofile.version>
+		<jackson.jaxrs.provider.version>2.9.9</jackson.jaxrs.provider.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>jakarta.platform</groupId>
+			<artifactId>jakarta.jakartaee-web-api</artifactId>
+			<version>${jakartaee.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.microprofile</groupId>
+			<artifactId>microprofile</artifactId>
+			<version>${microprofile.version}</version>
+			<type>pom</type>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+			<version>${jackson.jaxrs.provider.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>porto-investments</finalName>
+		<plugins>
+			<plugin>
+				<groupId>io.openliberty.tools</groupId>
+				<artifactId>liberty-maven-plugin</artifactId>
+				<version>${liberty.version}</version>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
