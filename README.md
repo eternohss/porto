@@ -44,6 +44,9 @@ Parabéns! Gostaríamos que você participasse deste desafio. Será um grande di
 # Para interromper a execução:
 - CTRL + C;
 
+# Postman:
+- Importar: https://www.getpostman.com/collections/c541ac62dc32734c957a
+
 # Para debugar:
 - Dentro do eclipse, crie um remote debug:<br>
 ![alt text](pictures/eclipse-debug.png)
