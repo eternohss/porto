@@ -10,12 +10,13 @@
 		<liberty.var.default.http.port>8080</liberty.var.default.http.port>
 		<liberty.var.default.https.port>8082</liberty.var.default.https.port>
 		<liberty.version>3.1</liberty.version>
-
+		<java.version>1.8</java.version>
 		<junit.version>4.8.1</junit.version>
 		<log4j.version>1.2.17</log4j.version>
 		<jakartaee.version>8.0.0</jakartaee.version>
 		<microprofile.version>3.2</microprofile.version>
 		<jackson.jaxrs.provider.version>2.9.9</jackson.jaxrs.provider.version>
+		<commons-beanutils.version>1.9.3</commons-beanutils.version>
 	</properties>
 
 	<dependencies>
@@ -53,6 +54,12 @@
 			<version>${log4j.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>${commons-beanutils.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -62,6 +69,14 @@
 				<groupId>io.openliberty.tools</groupId>
 				<artifactId>liberty-maven-plugin</artifactId>
 				<version>${liberty.version}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>8</source>
+					<target>8</target>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

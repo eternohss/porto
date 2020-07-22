@@ -2,6 +2,7 @@ package com.porto.financial.portopar.portoinvestments.rest;
 
 import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 import com.porto.financial.portopar.portoinvestments.providers.ThrowableMapper;
+import com.porto.financial.portopar.portoinvestments.resource.CalculateInvestmentsResource;
 import com.porto.financial.portopar.portoinvestments.resource.PersonResource;
 import com.porto.financial.portopar.portoinvestments.resource.ZipPostalResource;
 
@@ -22,7 +23,7 @@ public class RestApplication extends Application {
     classes.add(PersonResource.class);
     classes.add(ZipPostalResource.class);
     classes.add(ThrowableMapper.class);
-
+    classes.add(CalculateInvestmentsResource.class);
     return classes;
   }
 }
